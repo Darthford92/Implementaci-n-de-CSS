@@ -18,7 +18,7 @@
   - background-color: Fondo de la página. (Se pueden usar nombres de colores, HEX #, o RGB).
 */
 body {
-  background-color: #f0f4f8; /* Un gris azulado muy claro */
+  background-color: #470c4e; /* Un gris azulado muy claro */
   font-family: "Arial", sans-serif;
   color: #333333; /* Gris oscuro para el texto, es mejor que negro puro para leer */
   line-height: 1.6; /* Separación entre renglones */
@@ -30,7 +30,7 @@ body {
 /* Profe: "El ID (#) es un DNI, único e irrepetible. La Clase (.) es una tribu, se le puede poner a muchos."
 */
 #titulo-principal {
-  color: #2c3e50;
+  color: #ffffff;
   text-align: center;
   font-size: 3rem; /* 1rem = 16px por defecto. 3rem = 48px */
   margin-top: 20px;
@@ -51,6 +51,7 @@ body {
 .caja-basica {
   background-color: #e74c3c;
   color: white;
+  margin-left: 100px;
   width: 300px; /* Ancho estricto */
   height: 100px; /* Alto estricto */
   /* Fíjense que el texto está pegado a los bordes y las cajas se tocan entre sí */
