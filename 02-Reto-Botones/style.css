@@ -1,10 +1,4 @@
 /* Estilos generales para que se vea lindo el fondo */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #f8fafc;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -24,45 +18,25 @@ p {
 
 /* 1. Configuración Base para los botones */
 .btn {
-  height: 50px;
-  margin: 10px;
-  cursor: pointer;
-  color: white;
-  padding: 10px 20px;
-  border: none;
 }
 
 /* 2. Botón Primario */
 .btn-primario {
-  background-color: blue;
-  border-radius: 5px;
 }
 
 .btn-primario:hover {
-  background-color: #1808a3;
-  transition: 0.10s;
 }
 
 /* 3. Botón Outline (Secundario) */
 .btn-outline {
-  background-color: transparent;
-  border: 2px solid green;
-  color: green;
-  border-radius: 5px;
 }
 
 .btn-outline:hover {
-  background-color: green;
-  color: white;
-
 }
 
 /* 4. Botón Peligro */
 .btn-peligro {
-  background-color: red;
 }
 
 .btn-peligro:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 10px rgba(255,0,0,0.4)
 }
