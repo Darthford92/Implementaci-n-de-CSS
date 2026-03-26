@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #f1f5f9;
+  background-color: #33c407;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -60,8 +60,11 @@ a:hover {
 
 /* 1. El Contenedor Principal */
 .navbar {
-  background-color: white;
+  align-items: center;
+  background-color: rgb(221, 137, 11);
   border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
   padding: 20px 40px;
 
   /* Enciende Flexbox y distribuye los elementos */
@@ -70,9 +73,16 @@ a:hover {
 /* 2. La Lista de Enlaces */
 .nav-links {
   /* Haz que los enlaces estén en fila y sepáralos */
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 /* 3. El grupo de botones */
 .nav-botones {
   /* Haz que los botones estén en fila y sepáralos */
+  align-items: center;
+  display: flex;
+  gap: 10px;
 }
