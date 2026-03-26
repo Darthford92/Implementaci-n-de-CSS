@@ -60,14 +60,13 @@ a:hover {
 
 /* 1. El Contenedor Principal */
 .navbar {
-  align-items: center;
-  background-color: rgb(221, 137, 11);
-  border-bottom: 1px solid #e2e8f0;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-
   /* Enciende Flexbox y distribuye los elementos */
+  align-items: center; /* Alinea todo el contenido en el centro verticalmente*/
+  background-color: rgb(221, 137, 11);
+  border-bottom: 1px solid #e2e8f0; /* Asigna un borde inferior de color con blanco */
+  display: flex; /* Activa flexbox y pone todos los elementos uno arriba del otro */
+  justify-content: space-between; /* Separa los distintos elementos y pone espacio entre todos */
+  padding: 20px 40px;
 }
 
 /* 2. La Lista de Enlaces */
@@ -75,8 +74,8 @@ a:hover {
   /* Haz que los enlaces estén en fila y sepáralos */
   align-items: center;
   display: flex;
-  gap: 20px;
-  list-style: none;
+  gap: 20px; /* Agrega espacio entre elementos */
+  list-style: none; /* Quita los estilos de las listas */
 }
 
 /* 3. El grupo de botones */
