@@ -10,6 +10,7 @@ Crear una capa superpuesta (`overlay`) que cubra el 100% de la pantalla usando `
 
 ### 👀 Referencia Visual (Resultado Esperado)
 
+![Vista previa del Modal](assets/Screenshot_252.png)
 ![Vista previa del Modal](assets/preview.png)
 
 ---
