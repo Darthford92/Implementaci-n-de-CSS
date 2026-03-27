@@ -36,21 +36,41 @@ body {
 
 /* 1. El Contenedor de la Galería */
 .galeria {
+  display: grid; /* Activa el grid */
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define cómo se crean las columnas
+  La funcion repeat es para evitar escribir mucho código, suele tener dos parametros, X e Y
+  X -> Auto-Fill permite que el grid cree tantas columnas como se lo permita el ancho disponible y vuelve
+  responsive al código.
+  Y -> minmax define el tamaño de cada columna y recibe dos parametros el tamaño mínimo y el máximo
+  250px -> 250 pixeles de tamaño mínimo
+  1fr -> tamaño flexible que ayuda al responsive, representa una francción  */
+  grid-auto-rows: 200px; /* Define la altura de las filas automáticas */
+  grid-auto-flow: dense; /* Reorganiza automáticamente los elementos para evitar espacios vacíos */
 }
 
 /* 2. Las Imágenes */
 .item img {
+  border-radius: 20px;
+  height: 100%; /* Altura, definiendola al 100% tomará el total de la altura de la celda. */
+  object-fit: cover; /* No deforma la imagen y la adapta recortando si es necesario */
+  width: 100%; /* Anchura, definiendola al 100% tomará el total del ancho de la celda. */
 }
 
 .item {
+  transition: transform 0.3s ease;
 }
 
-.item:hover img {
+/*Se quitó el img del hover ya que quedaba raro*/
+.item:hover { 
+  transform: scale(1.05); /* Aplica la función transformación de escala al pasar el mouse por la imagen */
 }
 
 /* 3. Destacando Fotos (Rompiendo la Grilla) */
 .destacado-h {
+  grid-column: span 2; /* Hace que las fotos de destacado-h ocupen 2 columnas */
 }
 
 .destacado-v {
+  grid-row: span 2; /* Hace que las fotos de destacado-h ocupen 2 filas */
 }

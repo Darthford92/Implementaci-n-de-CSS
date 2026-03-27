@@ -8,7 +8,7 @@ Darle estilo a 3 botones distintos utilizando únicamente las propiedades del Mo
 
 ### 👀 Referencia Visual (Resultado Esperado)
 
-_(Profe: Reemplaza esta línea con tu captura de los botones terminados)_
+![Vista previa de los botones](assets/Screenshot_241.png)
 ![Vista previa de los botones](assets/preview.png)
 
 ---

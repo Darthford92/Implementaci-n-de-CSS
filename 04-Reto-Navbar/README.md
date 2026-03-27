@@ -10,7 +10,7 @@ Utilizar las propiedades de un contenedor Flex (`display`, `justify-content` y `
 
 ### 👀 Referencia Visual (Resultado Esperado)
 
-_(Profe: Reemplaza esta línea con tu captura del navbar terminado)_
+![Vista previa del Navbar](assets/Screenshot_248.png)
 ![Vista previa del Navbar](assets/preview.png)
 
 ---
