@@ -8,6 +8,7 @@ Construir una cuadrícula de imágenes que se adapte automáticamente al tamaño
 
 ### 👀 Referencia Visual (Resultado Esperado)
 
+![Vista previa de la Galería](assets/Screenshot_249.png)
 ![Vista previa de la Galería](assets/preview.png)
 
 ---

@@ -7,7 +7,7 @@
   padding: 0;
 }
 body {
-  background-color: #f1f5f9;
+  background-color: #ecf005;
   color: #334155;
   font-family: "Segoe UI", sans-serif;
 }
@@ -81,12 +81,29 @@ body {
 
 /* 1. La Capa Oscura (Fixed) */
 .modal-overlay {
+  align-items: center; /* Centra verticalmente */
+  background-color: rgba(0, 0, 0, 0.6); /* Hace que el color del modal se vea opaco */
+  display: flex; /* Esto ayuda a centrar también con flex */
+  /*¡NOTA! Decidí usar flex ya que si le ponía al overlay una posición relativa
+  y al modal box una absoluta luego no podría usar la posición absoluta en el botón de cerrar*/
+  height: 100%; /* Hacemos que ocupe la totalidad de la altura */
+  justify-content: center; /* Centra horizontalmente */
+  left: 0;/* Lo posiciona a la izquierda de todo */
+  position: fixed; /* Lo pegamos a la pantalla para que se mueva con ésta */
+  top: 0; /* Lo posiciona arriba de todo */
+  width: 100%; /* Hacemos que ocupe la totalidad del ancho */
+
 }
 
 /* 2. Centrado de la Caja Blanca (Absolute) + Ancla (Relative) */
 .modal-box {
+  position: relative;
+  z-index: 100; /* Busca posicionarlo sobre cualquier cosa */
 }
 
 /* 3. El Botón de Cierre (Absolute) */
 .btn-cerrar {
+  position: absolute;
+  right: 8px;
+  top: 0px;
 }
