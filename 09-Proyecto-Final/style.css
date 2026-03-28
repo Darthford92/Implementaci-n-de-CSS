@@ -4,16 +4,44 @@
   padding: 0;
 }
 
-body {
+body{
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.Nav_Bar{
+.Nav_bar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
   background-color: black;
+  padding: 20px;
+}
+
+ul{
+  list-style: none;
+}
+
+.Header_bar{
+  top: 0;
+  right: 0;
+  background-color: grey;
   color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid black;
 }
 
 section{
-  background-color: #181E25;
+  background-color: #111111;
+  color: white;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
 }
