@@ -15,6 +15,7 @@ Durante nuestra última clase de CSS, construiremos juntos un proyecto real de p
 ### 👀 Referencia Visual (Lo que vamos a construir)
 
 ![Vista previa de AppwiseMusic](assets/preview.png)
+![Vista final de AppwiseMusic](assets/Screenshot_337.png)
 
 > **💡 Nota del Profe:** Tu proyecto no tiene que quedar _exactamente_ igual pixel por pixel. Lo verdaderamente importante es que apliques los conceptos: **Flexbox** para la barra lateral y el navbar, **CSS Grid** para que los álbumes sean responsive, y **Position Fixed** para que el reproductor de abajo te persiga. ¡Siéntete libre de cambiar los colores, las fotos o los textos para hacerlo 100% tuyo!
 
