@@ -5,87 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Appwise Music - Proyecto Final</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   
   <body>
-    <aside class="Nav_bar">
+    <aside>
       <nav>
-        <h3>AppwiseMusic</h3>
+        <h3 id="title_aside"><i class="fa-solid fa-headphones" style="color: rgb(255, 255, 255);"></i></i> AppwiseMusic</h3>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Buscar</a></li>
-          <li><a href="#">Tú Biblioteca</a></li>
+          <li><i class="fa-solid fa-house-chimney-user" style="color: blue;"></i><a href="#"> Inicio</a></li>
+          <li><i class="fa-solid fa-magnifying-glass" style="color: green;"></i><a href="#"> Buscar</a></li>
+          <li><i class="fa-solid fa-music" style="color: red;"></i></i><a href="#"> Tú Biblioteca</a></li>
         </ul>
-        <hr>
+        <hr id="hr">
         <ul>
+          <p id="history">Recientes:</p>
           <li>Playlist para codear</li>
-          <li>Lo-Fi Beats 2024</li>
+          <li>Lo-Fi Coding</li>
           <li>Rock Nacional</li>
         </ul>
       </nav>
     </aside>
 
-     <header class="Header_bar">
-
-        <button>
-          <
-        </button>
-
-        <button>
-          >
-        </button>
-
-        <button>
-          Explorar Premium
-        </button>
-
-        <button>
-          N
-        </button>
-
-      </header>
-
-      <section >
-
-        <h1>Hecho para ti</h1>
-
-        <div class="Playlist">
-          <ul>
-            <li><a href="#">Lo-Fi Coding</a>
-              <p>
-                Beats para concentrarse al máximo.
-              </p>
-            </li>
-            <li><a href="#">Rock Clásico</a>
-              <p>
-                Leyendas de la guitarra.
-              </p>
-            </li>
-            <li><a href="#">Podcast Tech</a>
-              <p>
-                Noticias de desarrollo web.
-              </p>
-            </li>
-            <li><a href="#">Electrónica</a>
-              <p>
-                Para subir la energía.
-              </p>
-            </li>
-            <li><a href="#">Fiesta 2024</a>
-              <p>
-                Los hits del momento.
-              </p>
-            </li>
-          </ul>
+     <main>
+       <header>
+          <div>
+            <button class="nav_button">
+              <
+            </button>
+            <button class="nav_button">
+              >
+            </button>
+          </div>
+          <div>
+            <button id="premium_button">
+              Explorar Premium
+            </button>
+            <button id="user_button">
+              N
+            </button>
+          </div>
+        </header>
+        <section >
+          <h1>Hecho para ti</h1>
+          <div class="Playlist">
+            <ul>
+              <li><img src="assets/Screenshot_323.png" alt="Lo-Fi Coding">
+                <a href="#">Lo-Fi Coding</a>
+                <p>
+                  Beats para concentrarse al máximo.
+                </p>
+              </li>
+              <li>
+                <img src="assets/Screenshot_324.png" alt="Rock Nacional">
+                <a href="#">Rock Nacional</a>
+                <p>
+                  Leyendas del pueblo.
+                </p>
+              </li>
+              <li>
+                <img src="assets/Screenshot_325.png" alt="Podcast Tech">
+                <a href="#">Podcast Tech</a>
+                <p>
+                  Noticias de desarrollo web.
+                </p>
+              </li>
+              <li>
+                <img src="assets/Screenshot_326.png" alt="Electrónica">
+                <a href="#">Electrónica</a>
+                <p>
+                  Para subir la energía.
+                </p>
+              </li>
+              <li>
+                <img src="assets/Screenshot_327.png" alt="Fiesta 2024">
+                <a href="#">Fiesta 2024</a>
+                <p>
+                  Los hits del momento.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+     </main>
+     
+    <footer class="player"> <!--/* Class player para darle estilo después en el css */-->
+      <div class="player-info"> <!--/* dIV PARA MINIATURA */-->
+        <img src="assets/Screenshot_323.png" alt="Lo-Fi Coding"> 
+        <div> <!--/*  dIV PARA POSICIONAR LINK Y P */-->
+          <a id="player_link" href="#">Lo-Fi Coding</a>
+          <p>Beats para concentrarse al máximo.</p>
         </div>
+      </div>
 
-      </section>
+      <div class="player-controls"> <!-- Botónes de control del reproductor-->
+        <button>⏮</button>
+        <button id="play">▶</button> 
+        <button>⏭</button>
+      </div>
+
+      <div class="player-volume"> <!--Volúmen en un div separado para empujarlo a la derecha--> 
+        <button>🔊</button>
+      </div>
+    </footer>
   </body>
-
-  <footer class="player">
-    <audio controls>
-      <source src="audio.mp3" type="audio/mpeg">
-      Tu navegador no soporta el elemento de audio.
-    </audio>
-  </footer>
 </html>
